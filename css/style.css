@@ -1,0 +1,336 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.thumbnail a img .thumbnail img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+footer{
+   
+    width:100%;
+    bottom: 0px;
+    padding-top: 2px;
+    background: #333;
+    text-align: center; /*Alineación de texto*/
+    color: #fff;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+
+.hijos-cant{
+    display:none;
+}
+
+.mascota-esp{
+    display:none;
+}
+
+.mascota-cant{
+    display:none;
+}
+
+/*CONTENIDO PARA TAMAÑO PANTALLA COMPLETA*/
+.content_eform{
+	width: 50%;
+	height: 23.125rem;
+	background: #ec7a7a;
+	color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    position: sticky;
+    box-sizing: border-box;
+	padding: 1.8rem 1rem;
+    border-radius: 2rem;
+    padding-top: 4rem;
+    text-align: center;/**/
+}
+
+/*IMAGEN DE FORMULARIO*/
+.content_eform .avatar {
+  width: 6.25rem;
+  height: 6.25rem;
+  position: absolute;
+  top: -3.125rem;
+  left: calc(50% - 3.125rem);
+}
+
+/*BOTON GENERAR COMPROBANTE*/
+.content_eform input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 3rem;
+  width: 30%;
+  background: #ffc4f7;
+  color: #000000;
+  font-size: 100%;
+  border-radius: .3rem;
+  margin-top: 3rem;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content_eform input[type="submit"]:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+  color: #ec7a7a;
+}
+
+/*BOTON REGRESAR*/
+.botoncito input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 3rem;
+    width: 30%;
+    background: #ffc4f7;
+    color: #000000;
+    font-size: 100%;
+    border-radius: .3rem;
+    margin-top: 1rem;
+}
+
+.botoncito input[type="submit"]:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #ec7a7a;
+}
+
+.p_eform{
+    margin-top: 1rem;
+}
+h1 .h1_eform{
+    font-size: 1.5rem !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+
+/*CONTENIDO PARA TAMAÑO PANTALLA MINI*/
+@media only screen and (max-width: 600px) {
+
+.content_eform{
+  width: 20rem;
+  height: 21.125rem;
+  background: #ec7a7a;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+  box-sizing: border-box;
+  padding: 1.8rem .5rem;
+  margin-left: -.3rem;
+  border-radius: 2rem 2rem 2rem 2rem;
+  text-align: center; /**/
+}
+
+h1 .h1_eform{
+  font-size: 1.5rem !important;
+}
+
+
+.content_eform .avatar {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: -3.125rem;
+  left: calc(50% - 3.125rem);
+  fill: red;
+}
+
+
+
+.content_eform input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 2rem;
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 1rem;
+  border-radius: .3rem;
+  margin-top: 1rem;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.botoncito input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 2rem;
+    width: 5rem;
+    background: #708090;
+    color: #000000;
+    font-size: 1rem;
+    border-radius: .3rem;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.viewform{
+  margin-top: -30px !important;
+}
+
+}
+
+
+header{
+    background: #ec7a7a;
+    width: 100%;
+    top:0px;
+  
+}
+.menu{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.menu .logo{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu .logo img{
+    vertical-align: top;
+    height: 37px;
+}
+
+.menu .btn-menu{
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu .logo:hover{
+    background: #ec7a7a;
+}
+
+.menu .enlaces{
+    display: inline-block;
+    text-align: right;
+}
+
+.menu .enlaces a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.menu .enlaces i{
+    margin-right: 5px;
+}
+
+.menu .enlaces a:hover{
+    background: #fff;
+    color: #ec7a7a;
+}
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin:20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+    
+}
+
+/*EFECTOS DEL MENU*/
+
+/*Mediaqueries*/
+@media screen and (max-width:700px){
+    header .menu{
+        flex-direction: column;
+        
+    }
+
+    header .menu .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+    }
+
+    header .menu .logo .btn-menu{
+        display: inline-block;
+    }
+
+    header .menu .enlaces{
+        width: 100%;
+        display: flex;
+        flex-direction: row;  /*row si es horizontal*/
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.bg-light {
+    background-color: #ec7a7a!important;
+}
+
+.container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:15px;
+        margin-bottom: 15px;
+        
+}
+
+.h1-form{
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ec7a7a;
+    border-color: #ec7a7a;
+}
+
+.btn-primary:hover{
+    background-color: #c74a4a;
+    border-color: #c74a4a;
+}
+
+
+h2.card-h2{
+    text-align: center;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(236, 122, 122, 0.36);
+    border-bottom: 2px solid rgba(0,0,0,.125);
+}
+
+.botcol {
+    background-color:  #ec7a7a;
+}

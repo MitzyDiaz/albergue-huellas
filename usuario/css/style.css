@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #ec7a7a;
+    width: 100%;
+    top:0px;
+  
+}
+.menu{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.menu .logo{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu .logo img{
+    vertical-align: top;
+    height: 37px;
+}
+
+.menu .btn-menu{
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu .logo:hover{
+    background: #ec7a7a;
+}
+
+.menu .enlaces{
+    display: inline-block;
+    text-align: right;
+}
+
+.menu .enlaces a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.menu .enlaces i{
+    margin-right: 5px;
+}
+
+.menu .enlaces a:hover{
+    background: #fff;
+    color: #ec7a7a;
+}
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin:20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+    
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:15px;
+    margin-bottom: 15px;
+    
+}
+
+.h1-form{
+text-align: center;
+margin-bottom: 3rem;
+
+}
+
+.btn-primary {
+color: #fff;
+background-color: #ec7a7a;
+border-color: #ec7a7a;
+}
+
+.btn-primary:hover{
+background-color: #c74a4a;
+border-color: #c74a4a;
+}
+
+/*EFECTOS DEL MENU*/
+
+/*Mediaqueries*/
+@media screen and (max-width:700px){
+    header .menu{
+        flex-direction: column;
+        
+    }
+
+    header .menu .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+    }
+
+    header .menu .logo .btn-menu{
+        display: inline-block;
+    }
+
+    header .menu .enlaces{
+        width: 100%;
+        display: flex;
+        flex-direction: row;  /*row si es horizontal*/
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.bg-light {
+    background-color: #ec7a7a!important;
+}
+
+
